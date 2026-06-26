@@ -1,0 +1,61 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Goa Beach",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+      "description": "Enjoy the golden beaches, water sports, nightlife, and beautiful sunsets in Goa."
+    },
+    {
+      "id": 2,
+      "name": "Ooty",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+      "description": "Experience the cool climate, tea plantations, scenic mountains, and toy train rides."
+    },
+    {
+      "id": 3,
+      "name": "Manali",
+      "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963",
+      "description": "A paradise for nature lovers with snow-covered mountains, adventure sports, and valleys."
+    },
+    {
+      "id": 4,
+      "name": "Kerala Backwaters",
+      "image": "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+      "description": "Cruise through peaceful backwaters, stay in houseboats, and enjoy lush greenery."
+    },
+    {
+      "id": 5,
+      "name": "Jaipur",
+      "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41",
+      "description": "Explore magnificent forts, royal palaces, colorful bazaars, and rich Rajasthani culture."
+    },
+    {
+      "id": 6,
+      "name": "Mysore",
+      "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3",
+      "description": "Visit the grand Mysore Palace, Chamundi Hills, and experience the city's royal heritage."
+    }
+  ],
+
+  "bookings": [
+    {
+      "id": 1,
+      "locationId": 2,
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "phone": "9876543210",
+      "visitDate": "2026-07-15",
+      "people": 4
+    },
+    {
+      "id": 2,
+      "locationId": 1,
+      "name": "Priya Reddy",
+      "email": "priya.reddy@example.com",
+      "phone": "9123456789",
+      "visitDate": "2026-08-01",
+      "people": 2
+    }
+  ]
+}
