@@ -37,7 +37,6 @@
       "description": "Visit the grand Mysore Palace, Chamundi Hills, and experience the city's royal heritage."
     }
   ],
-
   "bookings": [
     {
       "id": 1,
@@ -49,22 +48,22 @@
       "noOfPeople": 4,
       "passengerDetails": [
         {
-          "name": "Rahul Sharma",
+          "passengerName": "Rahul Sharma",
           "gender": "Male",
           "age": 32
         },
         {
-          "name": "Sneha Sharma",
+          "passengerName": "Sneha Sharma",
           "gender": "Female",
           "age": 29
         },
         {
-          "name": "Aarav Sharma",
+          "passengerName": "Aarav Sharma",
           "gender": "Male",
           "age": 8
         },
         {
-          "name": "Ananya Sharma",
+          "passengerName": "Ananya Sharma",
           "gender": "Female",
           "age": 5
         }
@@ -80,12 +79,12 @@
       "noOfPeople": 2,
       "passengerDetails": [
         {
-          "name": "Priya Reddy",
+          "passengerName": "Priya Reddy",
           "gender": "Female",
           "age": 27
         },
         {
-          "name": "Kiran Reddy",
+          "passengerName": "Kiran Reddy",
           "gender": "Male",
           "age": 30
         }
@@ -101,7 +100,7 @@
       "noOfPeople": 3,
       "passengerDetails": [
         {
-          "name": "Sai Praveen",
+          "passengerName": "Sai Praveen",
           "gender": "Male",
           "age": 24,
           "preferences": [
@@ -109,20 +108,50 @@
           ]
         },
         {
-          "name": "Pooja",
+          "passengerName": "Pooja",
           "gender": "Female",
           "age": 22,
           "preferences": [
-    "Vegetarian",
-    "Travel Insurance"
-  ]
+            "Vegetarian",
+            "Travel Insurance"
+          ]
         },
         {
-          "name": "Neha",
+          "passengerName": "Neha",
           "gender": "Female",
           "age": 21,
           "preferences": [
             "Vegetarian"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "locationId": 2,
+      "locationName": "Ooty",
+      "name": "Praveen",
+      "email": "rokkamsaipraveen5l0@gmail.com",
+      "phoneNumber": "7969522435",
+      "visitDate": "2026-07-01",
+      "packageType": "Fasttrack",
+      "noOfPeople": 2,
+      "passengerDetails": [
+        {
+          "passengerName": "Praveen",
+          "gender": "Others",
+          "age": 22,
+          "preferences": [
+            "Travel Insurance"
+          ]
+        },
+        {
+          "passengerName": "Sai",
+          "gender": "Female",
+          "age": 23,
+          "preferences": [
+            "Vegetarian",
+            "Travel Insurance"
           ]
         }
       ]

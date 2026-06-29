@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Locations from "./components/Locations"
 import Book from "./components/Book"
 import ViewBookings from "./components/ViewBookings"
+import EditBooking from "./components/EditBooking"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Locations/>}/>
         <Route path="/book/:locationId/:locationName" element={<Book/>} />
         <Route path="/viewBookings" element={<ViewBookings/>}/>
+        <Route path="/editBooking/:id" element= {<EditBooking/>} />
         <Route path="*" element={<Navigate to= '/' />} />
       </Routes>
     </BrowserRouter>
