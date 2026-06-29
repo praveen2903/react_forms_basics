@@ -8,9 +8,8 @@ interface LocationInterface {
     image: string,
     description: string
 }
-const Locations = () => {
+const Locations = (): React.ReactNode => {
     const [locationData, setLocationData] = useState<LocationInterface[]>([]);
-    const [successMessage, setSuccessMessage] = useState<String>('');
     const [errorMessage, setErrorMessage] = useState<string>('Loading');
     const navigate = useNavigate();
 
@@ -18,7 +17,6 @@ const Locations = () => {
       try {
         const response = await axios.get<LocationInterface[]>(`http://localhost:4000/locations`);
         setLocationData(response.data)
-        setSuccessMessage("Data fetched successfuly! ")
         setErrorMessage("");
 
       } catch(err) {
@@ -30,7 +28,7 @@ const Locations = () => {
     },[]);
 
     const handleClick = (location: LocationInterface): void =>{
-      navigate(`/book/${location.id}`)
+      navigate(`/book/${location.id}/${location.name}`)
     }
     const displayLocations = (): React.ReactNode =>{
       let counter=0;

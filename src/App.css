@@ -1,0 +1,167 @@
+.book-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.book-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0d6efd;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 18px 25px;
+}
+
+.booking-form label {
+    font-weight: 600;
+    align-self: center;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="number"],
+.booking-form input[type="date"],
+.booking-form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13,110,253,.25);
+}
+
+.booking-form input:disabled {
+    background: #ececec;
+    color: #666;
+}
+
+/* Passenger Card */
+
+.passenger-card {
+    grid-column: 1 / span 2;
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 18px 20px;
+}
+
+.passenger-card::before {
+    content: "Passenger Details";
+    grid-column: 1 / span 2;
+    font-size: 20px;
+    font-weight: bold;
+    color: #198754;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Radio Buttons */
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+/* Checkbox Group */
+
+.checkbox-group {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group > label:first-child {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+/* Button */
+
+.booking-form button {
+    grid-column: 1 / span 2;
+    margin-top: 30px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #0d6efd;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.booking-form button:hover:not(:disabled) {
+    background: #0b5ed7;
+}
+
+.booking-form button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .passenger-card {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .booking-form button {
+        grid-column: auto;
+    }
+}

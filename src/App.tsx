@@ -11,7 +11,7 @@ function App() {
     <Navbar title={"Travels App"}/>
       <Routes>
         <Route path="/" element={<Locations/>}/>
-        <Route path="/book/:id" element={<Book/>} />
+        <Route path="/book/:locationId/:locationName" element={<Book/>} />
         <Route path="/viewBookings" element={<ViewBookings/>}/>
         <Route path="*" element={<Navigate to= '/' />} />
       </Routes>
