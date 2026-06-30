@@ -15,7 +15,6 @@ interface PassengerDetails {
 }
 
 interface BookingData {
-  locationId: number;
   locationName: string,
   name: string;
   email: string;
@@ -48,7 +47,6 @@ const Book = (): React.ReactNode => {
   const { locationId, locationName } = useParams<RouteParams>();  //same as defined in app.tsx
 
   const [formData, setFormData] = useState<BookingData>({
-    locationId: Number(locationId ?? 0),
     locationName: locationName ?? '',
     name: "",
     email: "",
@@ -150,8 +148,8 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElem
           newFormErrors.nameError = "Minimum 3 characters required"
           newFormValid.nameValid = false
         }
-        else if(fieldValue.toString().length >15) {
-          newFormErrors.nameError = "maxium 20 characters only";
+        else if(fieldValue.toString().length >40) {
+          newFormErrors.nameError = "maxium 40 characters only";
           newFormValid.nameValid = false
         }
         else {
@@ -259,7 +257,7 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElem
       <h2>Booking Form</h2>
       <form className="booking-form" onSubmit={submitForm}>
         <label>Location Id: </label>
-        <input type="text" value={formData.locationId} disabled/>
+        <input type="text" value={locationId} disabled/>
         <label>Location Name: </label>
         <input type="text" value={formData.locationName} disabled />
         <label>User Name:</label>

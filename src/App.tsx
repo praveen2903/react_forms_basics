@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Locations/>}/>
         <Route path="/book/:locationId/:locationName" element={<Book/>} />
         <Route path="/viewBookings" element={<ViewBookings/>}/>
-        <Route path="/editBooking/:id" element= {<EditBooking/>} />
+        <Route path="/editBooking/:bookingId" element= {<EditBooking/>} />
         <Route path="*" element={<Navigate to= '/' />} />
       </Routes>
     </BrowserRouter>

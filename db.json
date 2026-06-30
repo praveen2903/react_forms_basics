@@ -40,7 +40,7 @@
   "bookings": [
     {
       "id": 1,
-      "locationId": 2,
+      "locationName": "Ooty",
       "name": "Rahul Sharma",
       "email": "rahul.sharma@example.com",
       "phoneNumber": "9876543210",
@@ -71,7 +71,7 @@
     },
     {
       "id": 2,
-      "locationId": 1,
+      "locationName": "Goa Beach",
       "name": "Priya Reddy",
       "email": "priya.reddy@example.com",
       "phoneNumber": "9123456789",
@@ -92,7 +92,7 @@
     },
     {
       "id": 3,
-      "locationId": 4,
+      "locationName": "Kerala Backwaters",
       "name": "Sai Praveen",
       "email": "saipraveen@gmail.com",
       "phoneNumber": "9988776655",
@@ -127,8 +127,6 @@
       ]
     },
     {
-      "id": 4,
-      "locationId": 2,
       "locationName": "Ooty",
       "name": "Praveen",
       "email": "rokkamsaipraveen5l0@gmail.com",
@@ -139,7 +137,7 @@
       "passengerDetails": [
         {
           "passengerName": "Praveen",
-          "gender": "Others",
+          "gender": "Male",
           "age": 22,
           "preferences": [
             "Travel Insurance"
@@ -154,7 +152,8 @@
             "Travel Insurance"
           ]
         }
-      ]
+      ],
+      "id": 4
     }
   ]
 }
