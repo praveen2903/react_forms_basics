@@ -194,7 +194,10 @@ const EditBooking = () => {
               <input type="checkbox" checked={values.includes("Senior Citizen")} onChange={() => handleCheckbox("Senior Citizen")} />
               Senior Citizen
             </label>
-
+            <label>
+              <input type="checkbox" checked={values.includes("Child")} onChange={()=>handleCheckbox("Child")} />
+              Child
+            </label>
             <label>
               <input type="checkbox" checked={values.includes("Travel Insurance")}  onChange={() => handleCheckbox("Travel Insurance")} />
               Travel Insurance

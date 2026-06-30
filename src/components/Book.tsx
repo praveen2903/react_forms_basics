@@ -338,6 +338,11 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElem
             </label>
 
             <label>
+              <input type="checkbox" name="preferences" value="Child" checked={passenger?.preferences.includes("Child")} onChange={(e)=>handleChange(e,index)}/>
+              Child
+            </label>
+
+            <label>
               <input type="checkbox" name="preferences" value="Travel Insurance" checked={passenger?.preferences.includes("Travel Insurance")} onChange={(e)=>handleChange(e,index)}/>
               Travel Insurance
             </label>

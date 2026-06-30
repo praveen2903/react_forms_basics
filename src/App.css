@@ -345,12 +345,31 @@
   transition: 0.3s;
 }
 
+.delete-btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #fb1b1b;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;  
+  transition: 0.3s;
+}
+
 .edit-btn:hover {
   background: #1565c0;
   transform: translateY(-2px);
 }
 
 .edit-btn:active {
+  transform: scale(0.97);
+}
+.delete-btn:hover {
+  background: #d91111;
+  transform: translateY(-2px);
+}
+
+.delete-btn:active {
   transform: scale(0.97);
 }
 

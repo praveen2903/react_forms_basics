@@ -39,92 +39,70 @@
   ],
   "bookings": [
     {
-      "id": 1,
       "locationName": "Ooty",
       "name": "Rahul Sharma",
       "email": "rahul.sharma@example.com",
       "phoneNumber": "9876543210",
       "visitDate": "2026-07-15",
+      "packageType": "Premium",
       "noOfPeople": 4,
       "passengerDetails": [
         {
           "passengerName": "Rahul Sharma",
           "gender": "Male",
-          "age": 32
+          "age": 32,
+          "preferences": []
         },
         {
           "passengerName": "Sneha Sharma",
           "gender": "Female",
-          "age": 29
+          "age": 29,
+          "preferences": []
         },
         {
           "passengerName": "Aarav Sharma",
           "gender": "Male",
-          "age": 8
+          "age": 8,
+          "preferences": [
+            "Travel Insurance",
+            "Vegetarian"
+          ]
         },
         {
           "passengerName": "Ananya Sharma",
           "gender": "Female",
-          "age": 5
+          "age": 5,
+          "preferences": [
+            "Vegetarian",
+            "Wheelchair Assistance"
+          ]
         }
-      ]
+      ],
+      "id": 1
     },
     {
-      "id": 2,
       "locationName": "Goa Beach",
       "name": "Priya Reddy",
       "email": "priya.reddy@example.com",
       "phoneNumber": "9123456789",
       "visitDate": "2026-08-01",
+      "packageType": "Normal",
       "noOfPeople": 2,
       "passengerDetails": [
         {
           "passengerName": "Priya Reddy",
           "gender": "Female",
-          "age": 27
+          "age": 27,
+          "preferences": []
         },
         {
           "passengerName": "Kiran Reddy",
           "gender": "Male",
-          "age": 30
+          "age": 30,
+          "preferences": []
         }
-      ]
-    },
-    {
-      "id": 3,
-      "locationName": "Kerala Backwaters",
-      "name": "Sai Praveen",
-      "email": "saipraveen@gmail.com",
-      "phoneNumber": "9988776655",
-      "visitDate": "2026-09-10",
-      "noOfPeople": 3,
-      "passengerDetails": [
-        {
-          "passengerName": "Sai Praveen",
-          "gender": "Male",
-          "age": 24,
-          "preferences": [
-            "Vegetarian"
-          ]
-        },
-        {
-          "passengerName": "Pooja",
-          "gender": "Female",
-          "age": 22,
-          "preferences": [
-            "Vegetarian",
-            "Travel Insurance"
-          ]
-        },
-        {
-          "passengerName": "Neha",
-          "gender": "Female",
-          "age": 21,
-          "preferences": [
-            "Vegetarian"
-          ]
-        }
-      ]
+      ],
+      "id": 2
     },
     {
       "locationName": "Ooty",
