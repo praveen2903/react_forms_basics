@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
+import Chat from "./Chat";
 
 interface LocationInterface {
     id: number,
@@ -51,12 +52,15 @@ const Locations = (): React.ReactNode => {
         </div>
       )
     }
+    const locationRooms = locationData.map(l => l.name);
+
     return (
     <>
     {
       locationData.length ? (
         <>
         {displayLocations()}
+        <Chat mode="floating" rooms={['General', ...locationRooms]} defaultRoom="General" />
         </>
       ): (
         <>

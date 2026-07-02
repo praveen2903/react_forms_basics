@@ -496,7 +496,7 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElem
     return;
   }
 
-  setFormData({...formData, [name]: fieldValue});
+  setFormData({...formData, [name]: fieldValue});              ---------------> Important since updating the object is this way
   validateFieldValue(name, fieldValue);
 };
 

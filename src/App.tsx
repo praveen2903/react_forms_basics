@@ -4,6 +4,7 @@ import Locations from "./components/Locations"
 import Book from "./components/Book"
 import ViewBookings from "./components/ViewBookings"
 import EditBooking from "./components/EditBooking"
+import ChatPage from "./components/ChatPage"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/book/:locationId/:locationName" element={<Book/>} />
         <Route path="/viewBookings" element={<ViewBookings/>}/>
         <Route path="/editBooking/:bookingId" element= {<EditBooking/>} />
+        <Route path="/chat" element={<ChatPage/>} />
         <Route path="*" element={<Navigate to= '/' />} />
       </Routes>
     </BrowserRouter>

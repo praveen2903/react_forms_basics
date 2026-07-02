@@ -27,9 +27,9 @@ const Navbar: React.FC<NavbarProps> = ({ title }) => {
         <Link to='/'>
             {title}
         </Link>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', gap: '20px'}}>
             <Link to='/viewBookings'>View Bookings</Link>
-
+            <Link to='/chat' style={{ color: '#6366f1', fontWeight: 600 }}>💬 Live Chat</Link>
         </div>
       </div>
     </div>
