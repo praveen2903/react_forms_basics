@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import axiosClient from '../api/axiosClient';
 import Chat from './Chat';
 
 interface LocationItem {
@@ -13,7 +13,7 @@ const ChatPage = () => {
   useEffect(() => {
     const fetchLocations = async () => {
       try {
-        const res = await axios.get<LocationItem[]>('http://localhost:4000/locations');
+        const res = await axiosClient.get<LocationItem[]>('/locations');
         const names = res.data.map(l => l.name);
         setRooms(['General', ...names]);
       } catch {

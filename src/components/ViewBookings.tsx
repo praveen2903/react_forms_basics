@@ -1,4 +1,4 @@
-import axios from "axios";
+import axiosClient from "../api/axiosClient";
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import '../App.css'
@@ -25,14 +25,14 @@ const ViewBookings = () => {
   const [bookings, setBookings] = useState<Bookings[]>([]);
 
   const fetchData = async (): Promise<void> => {
-    const response = await axios.get('http://localhost:4000/bookings');
+    const response = await axiosClient.get('/bookings');
     setBookings(response.data)
   }
 
   const handleDelete= async(booking: Bookings): Promise<void> => {
     try {
       const deleteId = booking.id;
-      await axios.delete(`http://localhost:4000/bookings/${booking.id}`);
+      await axiosClient.delete(`/bookings/${booking.id}`);
       setBookings(booking=> booking.filter( book => book.id !== deleteId))
     } catch(err){
       console.log(err)

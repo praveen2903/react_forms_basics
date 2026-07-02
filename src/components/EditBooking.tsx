@@ -1,4 +1,4 @@
-import axios from "axios";
+import axiosClient from "../api/axiosClient";
 import { useEffect } from "react";
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
@@ -65,7 +65,7 @@ const EditBooking = () => {
   useEffect(()=>{
     const fetchData = async ():Promise<void> => {
       try {
-        const response = await axios.get('http://localhost:4000/bookings/'+bookingId);
+        const response = await axiosClient.get('/bookings/'+bookingId);
         // console.log(response.data)
         reset(response.data)
       } catch(err) {
@@ -76,7 +76,7 @@ const EditBooking = () => {
   },[])
   const onSubmit = async ( data: BookingFormData): Promise<void> => {
     try {
-      await axios.put("http://localhost:4000/bookings/"+bookingId,data);
+      await axiosClient.put("/bookings/"+bookingId,data);
       alert("Booking Successful");
       navigate('/viewBookings')
 

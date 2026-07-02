@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import '../App.css'
-import axios from "axios";
+import axiosClient from "../api/axiosClient";
 
 interface RouteParams extends Record<string, string | undefined> {
   locationId: string;
@@ -240,10 +240,10 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElem
     setFormValid(newFormValid)
   }
 
-  const submitForm =(event:React.FormEvent<HTMLFormElement>):void=> {
+  const submitForm = async (event:React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
     try {
-      axios.post('http://localhost:4000/bookings', formData);
+      await axiosClient.post('/bookings', formData);
       setSuccess("Successful submission");
       setError('')
     } catch(err) {
